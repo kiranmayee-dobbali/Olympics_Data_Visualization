@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization – Homework 4</title>
+    <style>
+
+      /* style of line charts */
+      .line-chart {
+        stroke: #086fad;
+        stroke-width: 1;
+        fill: none;
+      }
+
+      .line-chart-x {
+        stroke: #c7001e;
+      }
+
+      .line-chart-y {
+        stroke: #086fad;
+      }
+
+    </style>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.js"></script>
+    <script src="js/tree.js" async></script>
+    <script src="js/gender.js" async></script>
+    <script src="js/treescript.js" async></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Olympic Data Analysis</h1>
+        <p class="info">Name: Saivamshi Dobbali; E-Mail: u1266122@utah.edu; UID: u1266122</p>
+        <p class="info">Name: Kiranmayee Dobbali; E-Mail: u1265299@utah.edu; UID: u1265299</p>
+
+    </div>
+    <div class="topnav" id="topnavbar">
+      <a class= "btn" href="index.html">Main</a>
+      <a class="btn active" href="tree.html">TreeMap</a>
+      <a class="btn" href="LineGraph.html ">LineGraph</a>
+      <a class="btn" href="BarGraph.html">BarGraph</a>
+      <a class="btn" href="DemoVideo.html">DemoVideo</a>
+
+    </div>
+
+
+
+    <div id="treemap" style="width:900px">
+        <h1>Olympic medals distribution</h1>
+    </div>
+
+    <div class="GENDER">
+
+        <select id="dropdown" style = "margin-top:150px" onclick="selectedCountry()">
+        <option value="WRD">World</option>
+        <option value="AUS">Australia</option>
+        <option value="CAN">Canada</option>
+        <option value="FRA">France</option>
+        <option value="ITA">Italy</option>
+        <option value="GER">Germany</option>
+        <option value="GBR">United Kingdom</option>
+        <option value="HUN">Hungary</option>
+        <option value="USA">United States</option>
+        <option value="CHN">China</option>
+        <option value="JPN">Japan</option>
+        <option value="PRK">North Korea</option>
+        <option value="RUS">Russia</option>
+        <option value="IND">India</option>
+        <option value="PAK">Pakistan</option>
+        <option value="QAT">Qatar<option>
+        </select>
+
+
+
+      <div class = "gendergap">
+        <h2>Gender Gap</h2>
+        <svg class="line-chart line-chart-x" width="600" height="600">
+          <g >
+            <path
+              id="aLineChart"
+              d="M 0 10 L 1 8 L 2 13 L 3 9 L 4 11 L 5 14 L 6 6 L 7 4 L 8 12 L 9 7 L 10 5"
+            />
+          </g>
+
+          <g >
+            <path class = "line-chart-y"
+              id="bLineChart"
+              d="M 0 8.04 L 0 8.04 L 1 6.95 L 2 7.58 L 3 8.81 L 4 8.33 L 5 9.96 L 6 7.24 L 7 4.26 L 8 10.84 L 9 4.82 L 10 5.68 L 10 5.68"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+
+                  <h3>"In the treemap we could see lion share of total medals were going to few countries like
+                  Russia/USA back in 1980's but as time progressed in recent times we could see other countries are
+                  also pitching in.
+                   </h3>
+
+
+                  <h3>"As the above line chart represents, gender inequality was significant untill 2008
+                  But if you analyze developed nations like USA has rectified this problem way back in
+                  1996 itself. Which could also be a reason for the rapid growth of these nations
+                   </h3>
+
+
+</body>
+
+</html>

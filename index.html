@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.js"></script>
+    <script src="js/tree.js" async></script>
+    <script src="js/table.js" async></script>
+    <script src="js/gap_plot.js" async></script>
+    <script src="js/script.js" async></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Olympic Data Analysis</h1>
+        <p class="info">Name: Saivamshi Dobbali; E-Mail: u1266122@utah.edu; UID: u1266122</p>
+        <p class="info">Name: Kiranmayee Dobbali; E-Mail: u1265299@utah.edu; UID: u1265299</p>
+
+    </div>
+
+    <div class="topnav" id="topnavbar" style="width: 2100px">
+      <a class= "btn active" href="index.html">Main</a>
+      <a class="btn" href="tree.html">TreeMap</a>
+      <a class="btn" href="LineGraph.html ">LineGraph</a>
+      <a class="btn" href="BarGraph.html">BarGraph</a>
+      <a class="btn" href="DemoVideo.html">DemoVideo</a>
+
+    </div>
+
+    <div class="wrapper">
+
+      <div id="scatter-plot" class="view" style="width:900px">
+
+      </div>
+
+
+      <div class="innerWrapper">
+        <table id="matchTable">
+              <thead>
+              <tr>
+                  <th class="Team">Team</th>
+                  <td class="Gold"> Gold </td>
+                  <td class="Silver">Silver</td>
+                  <td class="Bronze">Bronze</td>
+                  <td class="Total">Total</td>
+              </tr>
+
+              </thead>
+
+              <tbody>
+
+              </tbody>
+        </table>
+      </div>
+
+  <div>
+
+  </div>
+
+
+  </div>
+
+
+                 <h3>"We have observed that countries with higher gdp percapita were able to send
+                  more number of participants and also won maximum number of medals. Thus developement
+                  of a country translated into number of medals won by the country" </h3>
+</body>
+
+</html>
