@@ -15,7 +15,7 @@ Entire code is written by us. Used online d3 library.
 
 -------- URLs --------
 
-Project website URL: https://saivamshidobbali.github.io/Olympics-Data-Visualization/
+Project website URL: https://kiranmayee-dobbali.github.io/Olympics_Data_Visualization/
 
 -------- Project Contributors --------
 
